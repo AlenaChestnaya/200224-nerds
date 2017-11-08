@@ -101,7 +101,7 @@
 		<footer>
 			<section class="footer-map">
 				<h2 class="visually-hidden">Наши координаты</h2>
-				<img class="map" src="img/map.jpg" alt="Карта" width="1440" height="416">
+				<img class="map" src="img/map.jpg" alt="Карта компании по адресу Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="1440" height="416">
         <img class="map-marker" src="img/map-marker.png" alt="Положение на карте" width="231" height="190">
 				<div class="address">
 					<p><b>NЁRDS DESIGN STUDIO</b></p>
@@ -123,6 +123,15 @@
 				</div>
 			</section>
 		</footer>
-			<!-- Здесь будет всплывающее окно с формой обратной связи -->
+		<form class="contact-form" action="index.html" method="post">
+			<h3>Напишите нам</h3>
+			<p><label for="full-name">Ваше имя:</label>
+			<input type="text" name="full-name" id="full-name" placeholder="Представьтесь, пожалуйста"></p>
+			<p><label for="e-mail">Ваш e-mail:</label>
+			<input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа"></p>
+			<p><label for="letter-content">Текст письма:</label>
+			<textarea name="letter-content" id="letter-content" placeholder="В свободной форме"></textarea></p>
+			<input type="submit" value="Отправить">
+		</form>
 	</body>
 	
