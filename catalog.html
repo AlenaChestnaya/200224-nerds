@@ -37,32 +37,36 @@
 		</header>
 
 		<main>
-			<section>
-				<h2>Фильтры</h2>
+			<section class="filter">
+				<h2 class="visually-hidden">Фильтры</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<fieldset>
+					<fieldset class="price-filter">
 						<legend>Стоимость:</legend>
-						<!-- Ползунок -->
-						<label for="price-from">От</label><input type="number" name="price-from" id="price-from" value="0"> 
-						<label for="price-to">до</label><input type="number" name="price-to" id="price-to" value="15000">
+						<div class="runner">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<label for="price-from">От </label><input type="number" name="price-from" id="price-from" value="0"> 
+						<label for="price-to">до </label><input type="number" name="price-to" id="price-to" value="15000">
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
-						<ul>
-							<li><input class="visually-hidden" type="radio" name="grid-filter" id="adaptive-grid" value="adaptive">
+						<ul class="grid-list">
+							<li><input class="visually-hidden" type="radio" name="grid-filter" id="adaptive-grid" value="adaptive" checked>
 								<label for="adaptive-grid"> Адаптивная</label>
 							</li>
 							<li><input class="visually-hidden" type="radio" name="grid-filter" id="fixed-grid" value="fixed">
 								<label for="fixed-grid"> Фиксированная</label>
 							</li>
-							<li><input class="visually-hidden" type="radio" name="grid-filter" id="flexible-grid" value="flexible">
+							<li><input class="visually-hidden" type="radio" name="grid-filter" id="flexible-grid" value="flexible" disabled>
 								<label for="flexible-grid"> Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Особенности:</legend>
-						<ul>
+						<ul class="features-list">
 							<li><input class="visually-hidden" type="checkbox" name="option-slider" id="option-slider" checked>
 								<label for="option-slider"> Слайдер</label>
 							</li>
@@ -84,21 +88,21 @@
 				</form>
 			</section>
 			<section class="catalog">
-				<h2>Список шаблонов</h2>
+				<h2 class="visually-hidden">Список шаблонов</h2>
 				<div class="sort">
 					<h3>Сортировать:</h3>
 					<ul class="sort-parameters">
-						<li><a href="#">По цене</a></li>
+						<li><a class="active" href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По названию</a></li>
 					</ul>
 					<ul class="sort-direction">
-						<li><a href="#" title="Сортировка от большего к меньшему">Будет картинка</a></li>
-						<li><a href="#" title="Сортировка от меньшего к большему">Будет другая картинка</a></li>
+						<li class="sort-desc"><a class="active" href="#" title="Сортировка от большего к меньшему"></a></li>
+						<li class="sort-asc"><a href="#" title="Сортировка от меньшего к большему"></a></li>
 					</ul>
 				</div>
 				<ul class="catalog-list">
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-sedona.jpg" alt="Шаблон сайта «Седона»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">SEDONA</a></h3>
@@ -106,7 +110,7 @@
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-pink.jpg" alt="Шаблон сайта «Пинк»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">Pink App</a></h3>
@@ -114,7 +118,7 @@
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-barbershop.jpg" alt="Шаблон сайта барбершопа «Бородинский»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">Barbershop</a></h3>
@@ -122,7 +126,7 @@
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-mishka.jpg" alt="Шаблон сайта «Мишка»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">MISHKA</a></h3>
@@ -130,7 +134,7 @@
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-aplus.jpg" alt="Шаблон сайта «А Плюс»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">A Plus</a></h3>
@@ -138,7 +142,7 @@
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
-					<li>
+					<li class="catalog-item">
 						<img src="img/catalog-kvast.jpg" alt="Шаблон сайта «Кваст»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">КВАСТ</a></h3>
@@ -148,7 +152,7 @@
 					</li>
 				</ul>
 				<ul class="pagination">
-					<li class="pagination-item"><a href="#" title="Первая страница">1</a></li>
+					<li class="pagination-item"><a class="active" href="#" title="Первая страница">1</a></li>
 					<li class="pagination-item"><a href="#" title="Вторая страница">2</a></li>
 					<li class="pagination-item"><a href="#" title="Третья страница">3</a></li>
 					<li class="pagination-item"><a href="#" title="Следующая страница">Следующая</a></li>
@@ -165,7 +169,7 @@
 					<p><b>NЁRDS DESIGN STUDIO</b></p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<button сlass="button" type="button">Напишите нам</button>
+					<button class="button" type="button">Напишите нам</button>
 				</div>
 			</section>
 			<section class="footer-social">
@@ -192,7 +196,7 @@
         <input type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
         <p><label for="letter-content">Текст письма:</label>
         <textarea name="letter-content" id="letter-content" placeholder="В свободной форме"></textarea></p>
-        <input type="submit" value="Отправить">
+        <button class="button" type="submit">Отправить</button> 
       </form> 
 		</section>
 	</body>
