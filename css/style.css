@@ -97,10 +97,13 @@ header {
 	border-radius: 2px;
 	background-color: #fb565a;
 }
-.button:hover {
+.button:hover,
+.social-button:hover {
 	background-color: #e74246;
 }
-.button:active {
+.button:active,
+.social-button:active {
+	color: rgba(255, 255, 255, 0.3);
 	background-color: #d7373b;
 	box-shadow: inset 0 2px 0 0 #c13135;
 }
@@ -246,21 +249,40 @@ tr:last-child td {
 }
 .social-button {
 	background-color: #e1e1e1;
-	background-position: center;
-	background-repeat: no-repeat;
 	border-radius: 50%;
 	display: inline-block;
 	width: 78px;
 	height: 78px;
 }
-li:first-child .social-button {
+li:first-child .social-button::before {
+	content: "";
 	background-image: url("../img/vk-icon.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 78px;
+	height: 78px;
+	display: block;
 }
-li:nth-child(2) .social-button  {
+li:nth-child(2) .social-button::before {
+	content: "";
 	background-image: url("../img/fb-icon.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 78px;
+	height: 78px;
+	display: block;
 }
-li:last-child .social-button {
+li:last-child .social-button::before {
+	content: "";
 	background-image: url("../img/insta-icon.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 78px;
+	height: 78px;
+	display: block;
+}
+.social-button:active::before {
+	opacity: 0.3;
 }
 form b {
 	font-size: 45px;
@@ -276,6 +298,35 @@ form b {
 .contact-form input,
 .contact-form textarea {
 	font: inherit;
+	line-height: 18px;
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: rgba(68, 68, 68, 0.5);
+	line-height: 18px;
+}
+.contact-form input:hover,
+.contact-form textarea:hover {
+	border-color: #b4b9bb;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: #000000;
+}
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+	color:  rgba(68, 68, 68, 1);
+}
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
+.contact-form input:invalid::placeholder,
+.contact-form textarea:invalid::placeholder {
+	color: #e74246;
 }
 .close {
 	width: 21px;
@@ -285,4 +336,10 @@ form b {
 	background-repeat: no-repeat;
 	opacity: 0.3;
 	border: none;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:active {
+	opacity: 0.1;
 }
