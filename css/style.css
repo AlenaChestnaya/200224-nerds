@@ -39,8 +39,10 @@ header {
 }
 .header-top {
 	font-size: 16px;
-  line-height: 30px;
-  color: #000000;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
 }
 .header-logo a:hover {
 	opacity: 0.8;
@@ -235,6 +237,7 @@ tr:last-child td {
 }
 .address p {
 	line-height: 18px;
+	color: #666666;
 }
 .address b {
 	font-size: 18px;
@@ -495,11 +498,12 @@ input:disabled + label::before {
 	display: block;
 	opacity: 0.2;
 }
-.sort-desc a:hover::before {
+.sort-asc a:hover::before {
 	opacity: 0.4;
 }
 .sort-desc a:active::before,
-.sort-desc .active::before {
+.sort-desc .active::before,
+.sort-asc a:active::before {
 	opacity: 1;
 }
 .sort-asc a::before {
