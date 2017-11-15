@@ -94,6 +94,8 @@ header {
 	font-weight: 500;
 	color: #ffffff;
 	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 	border-radius: 2px;
 	background-color: #fb565a;
 }
@@ -204,6 +206,9 @@ h3 {
 	text-transform: uppercase;
 	color: #000000;
 }
+.presentation-statistics p {
+	text-align: center;
+}
 .presentation-list li::before {
 	content: "—";
 	color: #fb565a;
@@ -237,6 +242,9 @@ tr:last-child td {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #000000;
+}
+.address button {
+	border: none;
 }
 .special-deal p {
 	line-height: 22px;
