@@ -64,6 +64,8 @@ header {
 .examples-list,
 .social-icons {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .main-nav a,
 .main-nav a:visited,
@@ -373,6 +375,8 @@ h1 {
 .catalog-list,
 .pagination {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 legend {
 	font-size: 18px;
@@ -563,4 +567,71 @@ input:disabled + label::before {
 .pagination-item .active {
 	background-color: #ffffff;
 	border: 2px solid #dbdbdb;
+}
+		/* Стили сетки */
+main, .wrapper {
+	width: 1160px;
+	margin: 0 auto;
+}
+.header-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-menu {
+	width: 440px;
+}
+.shopping-cart {
+	width: 160px;
+}
+.services-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+}
+.services-list-item {
+	width: 300px;
+}
+.presentation {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 40px;
+	padding-bottom: 76px;
+	border-bottom: 2px solid #eeeeee;
+}
+.presentation-text {
+	width: 660px;
+}
+.presentation-statistics {
+	width: 360px;
+	margin-left: auto;
+}
+.examples-list {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #eeeeee;
+	margin-bottom: 80px;
+}
+.examples-list li {
+	width: 260px;
+	height: 180px;
+	outline: 2px solid black;		/*	Понять, как отцентровать картинку внутри li	*/
+}
+.footer-social {
+	display: flex;
+	align-items: center;
+	padding-top: 69px;
+	padding-bottom: 70px;
+}
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 260px;
+	margin-right: 120px;
+}
+.special-deal {
+	width: 580px;
+	margin-right: 200px;
 }
