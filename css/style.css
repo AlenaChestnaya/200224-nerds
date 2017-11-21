@@ -533,6 +533,7 @@ input:disabled + label::before {
 }
 .catalog-item-description {
 	display: none;
+	width: 360px;
 }
 .catalog-item:hover .catalog-item-description {
 	display: block;
@@ -634,4 +635,67 @@ main, .wrapper {
 .special-deal {
 	width: 580px;
 	margin-right: 200px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.filter {
+	width: 260px;
+}
+.catalog {
+	width: 760px;
+	margin-bottom: 60px;
+}
+.sort {
+	display: flex;
+	align-items: center;
+	margin-bottom: 57px;
+}
+.sort h3 {
+	width: 160px;
+	margin-right: 240px;
+}
+.sort-parameters {
+	display: flex;
+	width: 280px;
+	margin-right: 20px;
+}
+.sort-parameters li:first-child {
+	width: 60px;
+	margin-right: 20px;
+}
+.sort-parameters li:nth-child(2) {
+	width: 80px;
+}
+.sort-parameters li:last-child {
+	width: 120px;	
+}
+.sort-direction {
+	display: flex;
+	width: 60px;
+}
+.sort-desc {
+	margin-left: 19px;
+}
+.sort-asc {
+	margin-left: 18px;
+	margin-right: 1px;
+}
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	width: 460px;
+}
+.pagination-item {
+	margin-right: 10px;
+}
+.pagination-item:last-child {
+	margin-right: auto;
 }
