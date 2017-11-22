@@ -592,6 +592,7 @@ main, .wrapper {
 }
 .examples-list {
 	display: flex;
+	justify-content: space-between;
 	border-bottom: 2px solid #eeeeee;
 	margin-bottom: 80px;
 }
@@ -599,7 +600,7 @@ main, .wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 25%;
+	width: 260px;
 	height: 180px;
 }
 .footer-social {
