@@ -22,8 +22,8 @@
 							<li>
 								<a href="#">Клиенты</a>
 							</li>
-							<li>
-								<a class="active" href="#">Магазин</a>
+							<li class="active">
+								<a href="#">Магазин</a>
 							</li>
 							<li>
 								<a href="#">Контакты</a>
@@ -42,17 +42,23 @@
 			<section class="filter">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<fieldset class="price-filter">
+					<fieldset class="filter-item">
 						<legend>Стоимость:</legend>
-						<div class="runner">
-							<span></span>
-							<span></span>
-							<span></span>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="price-from">От <input type="text" name="price-from" value="0"></label>
+								<label class="price-to">до <input type="text" name="price-to" value="15000"></label>
+							</div>
 						</div>
-						<label for="price-from">От </label><input type="number" name="price-from" id="price-from" value="0"> 
-						<label for="price-to">до </label><input type="number" name="price-to" id="price-to" value="15000">
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-item">
 						<legend>Сетка:</legend>
 						<ul class="grid-list">
 							<li><input class="visually-hidden" type="radio" name="grid-filter" id="adaptive-grid" value="adaptive" checked>
@@ -66,7 +72,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-item">
 						<legend>Особенности:</legend>
 						<ul class="features-list">
 							<li><input class="visually-hidden" type="checkbox" name="option-slider" id="option-slider" checked>
@@ -108,7 +114,7 @@
 						<img src="img/catalog-sedona.jpg" alt="Шаблон сайта «Седона»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">SEDONA</a></h3>
-							<p>Информационный сайт для туристов</p>
+							<p>Информационный сайт <br>для туристов</p>
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
@@ -124,7 +130,7 @@
 						<img src="img/catalog-barbershop.jpg" alt="Шаблон сайта барбершопа «Бородинский»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">Barbershop</a></h3>
-							<p>Сайт салоны красоты. Для мужчин, да.</p>
+							<p>Сайт салоны красоты. <br>Для мужчин, да.</p>
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
@@ -132,7 +138,7 @@
 						<img src="img/catalog-mishka.jpg" alt="Шаблон сайта «Мишка»." width="360" height="576">
 						<div class="catalog-item-description">
 							<h3><a href="#">MISHKA</a></h3>
-							<p>Интернет-магазин  вязаных игрушек</p>
+							<p>Интернет-магазин <br>вязаных игрушек</p>
 							<a class="button" href="#">9&nbsp;900&nbsp;руб.</a>
 						</div>
 					</li>
@@ -189,17 +195,19 @@
 		</footer>
 		<section class="contact-form">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
-			<button class="close" title="Закрыть форму"></button>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <b>Напишите нам</b>
-        <p><label for="full-name">Ваше имя:</label>
-        <input type="text" name="full-name" id="full-name" placeholder="Представьтесь, пожалуйста"></p>
-        <p><label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
-        <p><label for="letter-content">Текст письма:</label>
-        <textarea name="letter-content" id="letter-content" placeholder="В свободной форме"></textarea></p>
-        <button class="button" type="submit">Отправить</button> 
-      </form> 
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<b>Напишите нам</b>
+				<button class="close" type="button" title="Закрыть форму"></button>
+				<div class="flex-container">
+					<p><label for="full-name">Ваше имя:</label>
+					<input type="text" name="full-name" id="full-name" placeholder="Представьтесь, пожалуйста"></p>
+					<p><label for="email">Ваш e-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
+					<p><label for="letter-content">Текст письма:</label>
+					<textarea name="letter-content" id="letter-content" placeholder="В свободной форме"></textarea></p>
+					<button class="button" type="submit">Отправить</button> 
+				</div>
+			</form> 
 		</section>
 	</body>
 	
