@@ -624,7 +624,7 @@ header.inner-page {
 .container {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 63px;
+	padding-top: 54px;
 }
 .filter {
 	width: 260px;
@@ -640,9 +640,10 @@ header.inner-page {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #000000;
+	padding-top: 4px;
 }
 .filter-item:not(:first-child) legend {
-	margin-bottom: 18px;
+	margin-bottom: 17px;
 }
 .filter-item label {
 	line-height: 25px;
@@ -651,11 +652,20 @@ header.inner-page {
 .filter-item ul {
 	margin-bottom: 48px;
 }
+.filter-item li {
+	position: relative;
+}
 .grid-list li:not(:last-child) {
-	margin-bottom: 15px;
+	margin-bottom: 6px;
+}
+.grid-list label {
+	margin-left: 36px;
 }
 .features-list li:not(:last-child) {
-	margin-bottom: 17px;
+	margin-bottom: 12px;
+}
+.features-list label {
+	margin-left: 36px;
 }
 .range-filter {
 	margin-top: 49px;
@@ -681,7 +691,7 @@ header.inner-page {
 }
 .range-controls .toggle {
 	position: absolute;
-	top: 31px;
+	top: 28px;
 	background-image: url("../img/filter-button.svg");
 	background-repeat: no-repeat;
 	width: 20px;
@@ -696,7 +706,7 @@ header.inner-page {
 }
 .price-controls {
 	font-size: 0;
-	margin-bottom: 60px;
+	margin-bottom: 52px;
 }
 .price-controls label {
 	display: inline-block;
@@ -709,8 +719,8 @@ header.inner-page {
 	font: inherit;
 	text-align: center;
 	width: 60px;
-	padding: 8px 10px;
-	margin-left: 10px;
+	padding: 6px 10px;
+	margin-left: 8px;
 	background-color: #eeeeee;
 	border: none;
 	border-radius: 2px;
@@ -725,43 +735,44 @@ input:disabled + label {
 	opacity: 0.3;
 }
 input[type="radio"]:checked + label::before {
+	position: absolute;
+	left: 0;
 	content: "";
 	background-image: url("../img/radio-on.svg");
 	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
 	opacity: 0.4;
-	display: inline-block;
 }
 input[type="radio"] + label::before {
+	position: absolute;
+	left: 0;
 	content: "";
 	background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
 	opacity: 0.4;
-	display: inline-block;
-	margin-right: 10px;
 }
 input[type="checkbox"]:checked + label::before {
+	position: absolute;
+	left: 0;
 	content: "";
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 	width: 27px;
 	height: 23px;
 	opacity: 0.4;
-	display: inline-block;
-	margin-right: 10px;
 }
 input[type="checkbox"] + label::before {
+	position: absolute;
+	left: 0;
 	content: "";
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	width: 23px;
 	height: 23px;
 	opacity: 0.4;
-	display: inline-block;
-	margin-right: 13px;
 }
 input:checked + label:hover::before,
 input + label:hover::before {
