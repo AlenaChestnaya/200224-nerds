@@ -641,9 +641,21 @@ header.inner-page {
 	text-transform: uppercase;
 	color: #000000;
 }
+.filter-item:not(:first-child) legend {
+	margin-bottom: 18px;
+}
 .filter-item label {
 	line-height: 25px;
 	vertical-align: middle;
+}
+.filter-item ul {
+	margin-bottom: 48px;
+}
+.grid-list li:not(:last-child) {
+	margin-bottom: 15px;
+}
+.features-list li:not(:last-child) {
+	margin-bottom: 17px;
 }
 .range-filter {
 	margin-top: 49px;
@@ -684,6 +696,7 @@ header.inner-page {
 }
 .price-controls {
 	font-size: 0;
+	margin-bottom: 60px;
 }
 .price-controls label {
 	display: inline-block;
@@ -728,6 +741,7 @@ input[type="radio"] + label::before {
 	height: 25px;
 	opacity: 0.4;
 	display: inline-block;
+	margin-right: 10px;
 }
 input[type="checkbox"]:checked + label::before {
 	content: "";
@@ -737,6 +751,7 @@ input[type="checkbox"]:checked + label::before {
 	height: 23px;
 	opacity: 0.4;
 	display: inline-block;
+	margin-right: 10px;
 }
 input[type="checkbox"] + label::before {
 	content: "";
@@ -746,6 +761,7 @@ input[type="checkbox"] + label::before {
 	height: 23px;
 	opacity: 0.4;
 	display: inline-block;
+	margin-right: 13px;
 }
 input:checked + label:hover::before,
 input + label:hover::before {
