@@ -963,8 +963,10 @@ input:disabled + label::before {
 .catalog-item-description {
 	display: none;
 	position: absolute;
+	z-index: 1;
 	left: 0;
 	right: 0;
+	bottom: -4px;
 	width: 360px;
 	max-height: 576px;
 	box-sizing: border-box;
@@ -975,6 +977,9 @@ input:disabled + label::before {
 }
 .catalog-item:hover .catalog-item-description {
 	display: block;
+}
+.catalog-item-description:hover {
+	cursor: pointer;
 }
 .catalog-item-description h3 {
 	font-size: 18px;
@@ -1005,17 +1010,19 @@ input:disabled + label::before {
 }
 .pagination-item:last-child {
 	margin-right: auto;
+	text-transform: uppercase;
 }
 .pagination-item a {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	padding: 19px 23px;
+	padding: 17px 21px;
+	padding-bottom: 15px;
 	line-height: 18px;
 	font-weight: 500;
 	color: #000000;
 	background-color: #eeeeee;
-	border-radius: 2px;
+	border-radius: 3px;
 	box-sizing: border-box;
 }
 .pagination-item:last-child a,
@@ -1028,13 +1035,15 @@ input:disabled + label::before {
 }
 .pagination-item .active {
 	background-color: #ffffff;
-	border: 2px solid #dbdbdb;
-	padding: 17px 21px;
+	border: 3px solid #dbdbdb;
+	padding: 14px 18px;
+	padding-bottom: 12px;
 }
 .pagination-item a:active {
 	background-color: #d5d5d5;
 	box-shadow: inset 0 2px 0 0 #bfbfbf;
 	color: rgba(0, 0, 0, 0.3);
 	border: none;
-	padding: 19px 23px;
+	padding: 17px 21px;
+	padding-bottom: 15px;
 }
