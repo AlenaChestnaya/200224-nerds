@@ -72,7 +72,7 @@ header {
 }
 .main-menu {
 	width: 440px;
-	margin-top: 5px;
+	margin-top: 6px;
 }
 .main-nav {
 	display: flex;
@@ -81,6 +81,9 @@ header {
 }
 .main-nav li:not(:nth-child(4n)) {
 	margin-right: 45px;
+}
+.main-nav a {
+	position: relative;
 }
 .shopping-cart {
 	width: 160px;
@@ -103,6 +106,7 @@ header {
 	text-align: right;
 	vertical-align: middle;
 	width: 115px;
+	min-height: 30px;
 }
 .main-nav a,
 .main-nav a:visited,
@@ -118,9 +122,18 @@ header {
 .shopping-cart a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
-.main-nav .active,
-.shopping-cart .active {
-	border-bottom: 2px solid #fb565a;
+.main-nav .active::after,
+.shopping-cart .active::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	top: 27px;
+	left: 2px;
+	right: 0;
+	background-color: #fb565a;
+}
+.shopping-cart .active::after {
+	top: 33px;
 }
 .slider {
 	position: relative;
@@ -637,10 +650,10 @@ h1 {
 	font-weight: 500;
 	text-align: center;
 	color: #000000;
-	padding-top: 28px;
+	padding-top: 29px;
 }
 header.inner-page {
-	padding-bottom: 72px;
+	padding-bottom: 71px;
 }
 .grid-list,
 .features-list,
@@ -671,29 +684,30 @@ header.inner-page {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #000000;
-	padding-top: 4px;
+	padding-top: 1px;
 }
 .filter-item:not(:first-child) legend {
-	margin-bottom: 17px;
+	margin-bottom: 13px;
+	padding-top: 4px;
 }
 .filter-item label {
 	line-height: 25px;
 	vertical-align: middle;
 }
 .filter-item ul {
-	margin-bottom: 48px;
+	margin-bottom: 39px;
 }
 .filter-item li {
 	position: relative;
 }
 .grid-list li:not(:last-child) {
-	margin-bottom: 6px;
+	margin-bottom: 15px;
 }
 .grid-list label {
 	margin-left: 36px;
 }
 .features-list li:not(:last-child) {
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 }
 .features-list label {
 	margin-left: 36px;
@@ -722,7 +736,7 @@ header.inner-page {
 }
 .range-controls .toggle {
 	position: absolute;
-	top: 28px;
+	top: 29px;
 	background-image: url("../img/filter-button.svg");
 	background-repeat: no-repeat;
 	width: 20px;
@@ -816,12 +830,16 @@ input:disabled + label::before {
 .filter button {
 	background-color: #eeeeee;
 	line-height: 18px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 2px;
-	padding: 17px 88px;
+	padding-top: 17px;
+	padding-left: 88px;
+	padding-right: 88px;
+	padding-bottom: 15px;
+	margin-top: 8px;
 }
 .filter button:hover {
 	background-color: #dfdfdf;
