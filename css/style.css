@@ -175,7 +175,7 @@ header {
 }
 .slides-switches {
 	position: absolute;
-	bottom: 89px;
+	bottom: 97px;
 	left: 535px;
 	z-index: 1;
 	display: flex; 
@@ -183,6 +183,7 @@ header {
 	width: 88px;
 }
 .slide-button {
+	display: block;
 	border: none;
 	border-radius: 50%;
 	background-color: #ffffff;
@@ -425,6 +426,9 @@ tr:last-child td {
 iframe {
 	position: absolute;
 	z-index: 1;
+	width: 100%;
+	height: 416px;
+	border: none;
 }
 .address {
 	position: absolute;
