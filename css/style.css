@@ -154,14 +154,13 @@ header {
 	margin-top: 0;
 }
 .slider-list li {
+	display: none;
 	min-height: 420px;
 	box-sizing: border-box;
-	display: none;
 	padding-top: 66px;
 	background-repeat: no-repeat;
 }
 .slider-list li:first-child {
-	display: block;
 	background-image: url("../img/slide1.png");
 	background-position: 93% 7px;
 }
@@ -190,15 +189,27 @@ header {
 	width: 18px;
 	height: 18px;
 	padding: 0;
+	color: transparent;
 }
-.active button::before {
-	content: "";
+.product-1:checked ~ .slider-list li:first-child {
+  display: block;
+}
+.product-2:checked ~ .slider-list li:nth-child(2) {
+  display: block;
+}
+.product-3:checked ~ .slider-list li:last-child {
+  display: block;
+}
+.product-1:checked ~ .slides-switches .slide-button-1::before,
+.product-2:checked ~ .slides-switches .slide-button-2::before,
+.product-3:checked ~ .slides-switches .slide-button-3::before {
+  content: "";
 	border: 2px solid #c3c3c3;
 	border-radius: 50%;
 	height: 8px;
 	width: 8px;
 	display: block;
-	margin: 0 auto;
+	margin: 25% auto;
 	box-sizing: border-box;
 }
 .button {
@@ -208,7 +219,6 @@ header {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: middle;
 	border-radius: 2px;
 	background-color: #fb565a;
 	display: block;
