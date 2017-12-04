@@ -471,11 +471,21 @@ iframe {
 	padding-bottom: 3px;
 	padding-left: 2px;
 }
-.address button {
+.address .contact-button {
+	display: block;
 	width: 220px;
 	margin-top: 34px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #fb565a;
+	padding: 16px 0;
 }
-.address button,
+.address .contact-button,
 .contact-form button {
 	border: none;
 }
@@ -556,9 +566,10 @@ li:last-child .social-button::before {
 	height: 590px;
 	box-sizing: border-box;
 	position: fixed;
-	transform: translate(-50%, -50%);
 	left: 50%;
 	top: 50%;
+	margin-top: -295px;
+	margin-left: -480px;
 	z-index: 2;
 	background-color: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75)
@@ -661,7 +672,46 @@ form b {
 .contact-form textarea:invalid::placeholder {
 	color: #e74246;
 }
-
+.contact-form-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+.contact-form-error {
+  animation: shake 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 /* Стили страницы каталога  */
 h1 {
 	font-size: 55px;
