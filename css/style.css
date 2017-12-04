@@ -1,14 +1,15 @@
 body {
+	position: relative;
+	min-width: 1440px;
 	margin: 0;
 	padding: 0;
-	min-width: 1440px;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #283136;
 	background-color: #ffffff;
-	position: relative;
+	
 }
 a {
 	text-decoration: none;
@@ -25,17 +26,17 @@ img {
 .presentation-list,
 .examples-list,
 .social-icons {
-	list-style: none;
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
 .visually-hidden { 
 	position: absolute; 
 	width: 1px; 
 	height: 1px; 
 	margin: -1px; 
-	border: 0; 
 	padding: 0; 
+	border: 0; 
 	white-space: nowrap; 
 	clip-path: inset(100%); 
 	clip: rect(0 0 0 0); 
@@ -49,18 +50,18 @@ main, .wrapper {
 	position: relative;
 }
 header {
-	background-color: #eeeeee;
 	padding-top: 49px;
+	background-color: #eeeeee;
 }
 .header-top {
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 500;
-	color: #000000;
-	text-transform: uppercase;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
 }
 .header-logo {
 	padding-bottom: 2px;
@@ -88,26 +89,26 @@ header {
 }
 .shopping-cart {
 	width: 160px;
-	text-align: right;
 	margin-top: 4px;
+	text-align: right;
 }
 .shopping-cart a::before {
 	content: "";
+	position: absolute;
+	left: 0;
+	top: 8px;
 	width: 15px;
 	height: 15px;
 	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
-	position: absolute;
-	left: 0;
-	top: 8px;
 }
 .shopping-cart a {
 	position: relative;
 	display: inline-block;
-	text-align: right;
-	vertical-align: middle;
 	width: 115px;
 	min-height: 30px;
+	text-align: right;
+	vertical-align: middle;
 }
 .main-nav a,
 .main-nav a:visited,
@@ -126,11 +127,11 @@ header {
 .main-nav .active::after,
 .shopping-cart .active::after {
 	content: "";
-	position: absolute;
-	height: 2px;
+	position: absolute;	
 	top: 27px;
 	left: 2px;
 	right: 0;
+	height: 2px;
 	background-color: #fb565a;
 }
 .shopping-cart .active::after {
@@ -141,23 +142,23 @@ header {
 }
 .slider-list p {
 	max-width: 430px;
-	margin-bottom: 39px;
 	margin-top: 0;
+	margin-bottom: 39px;
 }
 .slider-list .header-slogan {
+	max-width: 600px;
+	margin-bottom: 27px;
+	margin-top: 0;
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
-	max-width: 600px;
-	margin-bottom: 27px;
-	margin-top: 0;
 }
 .slider-list li {
 	display: none;
 	min-height: 420px;
-	box-sizing: border-box;
 	padding-top: 66px;
+	box-sizing: border-box;
 	background-repeat: no-repeat;
 }
 .slider-list li:first-child {
@@ -183,13 +184,13 @@ header {
 }
 .slide-button {
 	display: block;
-	border: none;
-	border-radius: 50%;
-	background-color: #ffffff;
 	width: 18px;
 	height: 18px;
 	padding: 0;
+	border: none;
+	border-radius: 50%;
 	color: transparent;
+	background-color: #ffffff;
 }
 .product-1:checked ~ .slider-list li:first-child {
   display: block;
@@ -204,15 +205,18 @@ header {
 .product-2:checked ~ .slides-switches .slide-button-2::before,
 .product-3:checked ~ .slides-switches .slide-button-3::before {
   content: "";
-	border: 2px solid #c3c3c3;
-	border-radius: 50%;
+	display: block;
 	height: 8px;
 	width: 8px;
-	display: block;
-	margin: 25% auto;
 	box-sizing: border-box;
+	margin: 25% auto;
+	border: 2px solid #c3c3c3;
+	border-radius: 50%;
 }
 .button {
+	display: block;
+	width: 240px;
+	padding: 16px 0;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -221,9 +225,6 @@ header {
 	text-align: center;
 	border-radius: 2px;
 	background-color: #fb565a;
-	display: block;
-	width: 240px;
-	padding: 16px 0;
 }
 .button:hover,
 .social-button:hover {
@@ -234,14 +235,6 @@ header {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #d7373b;
 	box-shadow: inset 0 2px 0 0 #c13135;
-}
-h3 {
-	margin: 0;
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #000000;
 }
 .services-list {
 	display: flex;
@@ -270,7 +263,13 @@ h3 {
 	background-image: url("../img/services3.png");
 }
 .services-list-item h3 {
+	margin: 0;
 	margin-top: 21px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
 }
 .services-list-item p {
 	max-width: 260px;
@@ -331,14 +330,14 @@ h3 {
 	margin-bottom: 24px;
 }
 .presentation-list li::before {
+	content: "";
 	display: inline-block;
 	vertical-align: middle;
-	content: "";
 	width: 25px;
 	height: 2px;
-	background-color: #fb565a;
 	margin-right: 11px;
 	margin-bottom: 2px;
+	background-color: #fb565a;
 }
 .presentation-text>b,
 .presentation-statistics p {
@@ -349,17 +348,17 @@ h3 {
 	color: #000000;
 }
 .presentation-statistics p {
-	text-align: center;
 	margin-top: 28px;
 	margin-bottom: 53px;
+	text-align: center;
 }
 .presentation-statistics {
 	width: 360px;
 	margin-left: auto;
 }
 .presentation-statistics table {
-	border-collapse: collapse;
 	width: 100%;
+	border-collapse: collapse;
 }
 tr:first-child td {
 	font-size: 45px;
@@ -381,32 +380,43 @@ tr:last-child td {
 	top: -15px;
 }
 .examples-list {
-	min-height: 180px;
+	height: 180px;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	border-bottom: 2px solid #eeeeee;
 	margin-bottom: 80px;
 }
 .examples-list li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 260px;
-	height: 180px;
-	position: relative;
-}
-.examples-list li:not(:last-child)::after {
-	content: "";
-	width: 2px;
 	height: 52px;
-	background-color: #eeeeee;
-	position: absolute;
-	right: -20px; 
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 2px solid #eeeeee;
 }
+.examples-list li:last-child {
+	border: none;
+	padding-right: 0;
+}
+.examples-list li:first-child {
+	padding-left: 0;
+}
+.examples-list .academy-logo {
+	transform: translateY(-3%);
+}
+
+.examples-list .barbershop-logo {
+	transform: translateY(-20%);
+}
+
+.examples-list .mishka-logo {
+	transform: translateY(-15%);
+}
+
 .examples-list a {
+	display: block;
 	opacity: 0.2;
 }
+
 .examples-list a:hover {
 	opacity: 1;
 }
@@ -415,13 +425,9 @@ tr:last-child td {
 }
 .examples-list img {
 	display: block;
+	margin: 0 auto;
 }
-.examples-list .academy-logo {
-	margin-top: 11px;
-}
-.examples-list .mishka-logo {
-	margin-top: 7px;
-}
+
 .footer-map {
 	position: relative;
 	height: 416px;
@@ -926,10 +932,14 @@ input:disabled + label::before {
 	padding-top: 2px;
 }
 .sort h3 {
+	width: 160px;
+	margin: 0;
+	margin-right: 240px;
 	font-size: 18px;
 	line-height: 18px;
-	width: 160px;
-	margin-right: 240px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
 }
 .sort a:visited,
 .catalog-list a:visited:not(.button) {
@@ -1051,9 +1061,13 @@ input:disabled + label::before {
 	cursor: pointer;
 }
 .catalog-item-description h3 {
+	margin-bottom: 16px;
+	margin: 0;
 	font-size: 18px;
 	line-height: 30px;
-	margin-bottom: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
 }
 .catalog-item-description p {
 	line-height: 18px;
