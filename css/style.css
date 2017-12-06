@@ -271,7 +271,7 @@ header {
 .button {
 	display: block;
 	width: 240px;
-	padding: 16px 0;
+	padding: 17px 0;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
@@ -402,12 +402,12 @@ header {
 }
 
 .presentation-text p:first-of-type {
-	margin-top: 33px;
+	margin-top: 35px;
 	margin-bottom: 33px;
 }
 
 .presentation-text p:last-of-type {
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 
 .presentation-text .presentation-list {
@@ -439,8 +439,8 @@ header {
 }
 
 .presentation-statistics p {
-	margin-top: 29px;
-	margin-bottom: 56px;
+	margin-top: 28px;
+	margin-bottom: 55px;
 	text-align: center;
 }
 
@@ -1003,7 +1003,7 @@ header {
 }
 /* Стили страницы каталога */
 .inner-page h1 {
-	padding-top: 31px;
+	padding-top: 29px;
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -1033,7 +1033,7 @@ header.inner-page {
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
-	padding-top: 53px;
+	padding-top: 55px;
 }
 
 .filter {
@@ -1064,7 +1064,7 @@ header.inner-page {
 }
 
 .filter-item ul {
-	margin-bottom: 41px;
+	margin-bottom: 45px;
 }
 
 .filter-item li {
@@ -1132,7 +1132,7 @@ header.inner-page {
 }
 
 .price-controls {
-	margin-bottom: 53px;
+	margin-bottom: 55px;
 	font-size: 0;
 }
 
