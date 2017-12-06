@@ -454,7 +454,7 @@ header {
 	border-collapse: collapse;
 }
 
-tr:first-child td {
+.presentation-table-row:first-child td {
 	width: 30%;
 	padding-bottom: 29px;
 	padding-left: 0;
@@ -465,7 +465,7 @@ tr:first-child td {
 	color: #000000;
 }
 
-tr:last-child td {
+.presentation-table-row:last-child td {
 	padding-top: 5px;
 	line-height: 18px;
 }
@@ -560,7 +560,7 @@ tr:last-child td {
 	top: 89px;
 }
 
-iframe {
+.footer-map iframe {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
@@ -688,7 +688,7 @@ iframe {
 	background-color: #e1e1e1;
 }
 
-li:first-child .social-button::before {
+.social-vk .social-button::before {
 	content: "";
 	display: block;
 	width: 78px;
@@ -698,7 +698,7 @@ li:first-child .social-button::before {
 	background-repeat: no-repeat;
 }
 
-li:nth-child(2) .social-button::before {
+.social-fb .social-button::before {
 	content: "";
 	display: block;
 	width: 78px;
@@ -708,7 +708,7 @@ li:nth-child(2) .social-button::before {
 	background-repeat: no-repeat;
 }
 
-li:last-child .social-button::before {
+.social-inst .social-button::before {
 	content: "";
 	display: block;
 	width: 78px;
@@ -764,7 +764,7 @@ li:last-child .social-button::before {
 	padding: 0;
 }
 
-form b {
+.contact-form b {
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
@@ -1002,7 +1002,7 @@ form b {
 	}
 }
 /* Стили страницы каталога */
-h1 {
+.inner-page h1 {
 	padding-top: 31px;
 	font-size: 55px;
 	font-weight: 500;
@@ -1388,6 +1388,7 @@ header.inner-page {
 	position: absolute;
 	top: 40px;
 	left: 0;
+	right: 0;
 	bottom: -4px;
 	width: 358px;
 	border: 1px solid rgba(0, 1, 1, 0.1);
@@ -1399,6 +1400,15 @@ header.inner-page {
 	height: 613px;
 	margin-bottom: 36px;
 	text-align: center;
+}
+
+.catalog-item:hover {
+	-webkit-box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+					box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+}
+
+.catalog-item:hover .catalog-item-description {
+	display: block;
 }
 
 .catalog-item-description {
@@ -1416,10 +1426,6 @@ header.inner-page {
 	padding-bottom: 43px;
 	overflow: auto;
 	background-color: #eeeeee; 
-}
-
-.catalog-item:hover .catalog-item-description {
-	display: block;
 }
 
 .catalog-item-description:hover {
