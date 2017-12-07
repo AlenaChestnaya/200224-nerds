@@ -1162,7 +1162,8 @@ header.inner-page {
 	text-align: right;
 }
 
-.radio-filter + label:hover {
+.radio-filter + label:hover,
+.check-filter + label:hover {
 	color: #000000;
 }
 
@@ -1456,6 +1457,10 @@ header.inner-page {
 	margin: 0 auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.catalog-item-description .button:active {
+	color: #ffffff;
 }
 
 .pagination {
